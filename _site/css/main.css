@@ -114,7 +114,8 @@ code {
   font-size: 15px;
   border: 1px solid #e8e8e8;
   border-radius: 3px;
-  background-color: #eef; }
+  background-color: #2B3150;
+  color: #CDD6D8; }
 
 code {
   padding: 1px 5px; }
@@ -327,6 +328,18 @@ pre {
 .page-heading {
   font-size: 20px; }
 
+.post-number {
+  border: 2px solid #000;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  text-align: center;
+  margin: 0px auto 0;
+  top: -20px;
+  font-family: Montserrat;
+  font-weight: 700;
+  position: relative; }
+
 .post-list {
   margin-left: 0;
   list-style: none; }
@@ -368,7 +381,6 @@ pre {
       font-size: 36px; } }
 
 .post-content {
-  margin-bottom: 30px;
   padding: 0 7.5%; }
   .post-content h2 {
     font-size: 32px; }
@@ -392,35 +404,35 @@ pre {
 .highlight {
   background: #fff; }
   .highlighter-rouge .highlight {
-    background: #eef; }
+    background: #2B3150; }
   .highlight .c {
-    color: #998;
+    color: #5D657B;
     font-style: italic; }
   .highlight .err {
-    color: #a61717;
+    color: #95851C;
     background-color: #e3d2d2; }
   .highlight .k {
     font-weight: bold; }
   .highlight .o {
     font-weight: bold; }
   .highlight .cm {
-    color: #998;
+    color: #5D657B;
     font-style: italic; }
   .highlight .cp {
-    color: #999;
+    color: #5D657B;
     font-weight: bold; }
   .highlight .c1 {
-    color: #998;
+    color: #5D657B;
     font-style: italic; }
   .highlight .cs {
-    color: #999;
+    color: #5D657B;
     font-weight: bold;
     font-style: italic; }
   .highlight .gd {
-    color: #000;
+    color: #CDD6D8;
     background-color: #fdd; }
   .highlight .gd .x {
-    color: #000;
+    color: #CDD6D8;
     background-color: #faa; }
   .highlight .ge {
     font-style: italic; }
@@ -429,10 +441,10 @@ pre {
   .highlight .gh {
     color: #999; }
   .highlight .gi {
-    color: #000;
+    color: #CDD6D8;
     background-color: #dfd; }
   .highlight .gi .x {
-    color: #000;
+    color: #CDD6D8;
     background-color: #afa; }
   .highlight .go {
     color: #888; }
@@ -453,12 +465,12 @@ pre {
   .highlight .kr {
     font-weight: bold; }
   .highlight .kt {
-    color: #458;
+    color: #95851C;
     font-weight: bold; }
   .highlight .m {
-    color: #099; }
+    color: #95851C; }
   .highlight .s {
-    color: #d14; }
+    color: #95851C; }
   .highlight .na {
     color: #008080; }
   .highlight .nb {
@@ -471,45 +483,45 @@ pre {
   .highlight .ni {
     color: #800080; }
   .highlight .ne {
-    color: #900;
+    color: #90A3D5;
     font-weight: bold; }
   .highlight .nf {
-    color: #900;
+    color: #90A3D5;
     font-weight: bold; }
   .highlight .nn {
     color: #555; }
   .highlight .nt {
-    color: #000080; }
+    color: #CDD6D8; }
   .highlight .nv {
-    color: #008080; }
+    color: #CDD6D8; }
   .highlight .ow {
     font-weight: bold; }
   .highlight .w {
     color: #bbb; }
   .highlight .mf {
-    color: #099; }
+    color: #5D657B; }
   .highlight .mh {
-    color: #099; }
+    color: #5D657B; }
   .highlight .mi {
-    color: #099; }
+    color: #5D657B; }
   .highlight .mo {
-    color: #099; }
+    color: #5D657B; }
   .highlight .sb {
-    color: #d14; }
+    color: #95851C; }
   .highlight .sc {
-    color: #d14; }
+    color: #95851C; }
   .highlight .sd {
-    color: #d14; }
+    color: #95851C; }
   .highlight .s2 {
-    color: #d14; }
+    color: #95851C; }
   .highlight .se {
-    color: #d14; }
+    color: #95851C; }
   .highlight .sh {
-    color: #d14; }
+    color: #95851C; }
   .highlight .si {
-    color: #d14; }
+    color: #95851C; }
   .highlight .sx {
-    color: #d14; }
+    color: #95851C; }
   .highlight .sr {
     color: #009926; }
   .highlight .s1 {
@@ -517,12 +529,12 @@ pre {
   .highlight .ss {
     color: #990073; }
   .highlight .bp {
-    color: #999; }
+    color: #90A3D5; }
   .highlight .vc {
-    color: #008080; }
+    color: #CDD6D8; }
   .highlight .vg {
-    color: #008080; }
+    color: #CDD6D8; }
   .highlight .vi {
-    color: #008080; }
+    color: #CDD6D8; }
   .highlight .il {
-    color: #099; }
+    color: #90A3D5; }
