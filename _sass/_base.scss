@@ -23,6 +23,9 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    &.alt {
+        background-color: #DCDCDC;
+    }
 }
 
 
@@ -37,7 +40,27 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
+h1 {
+    font-family: Oswald;
+    margin-left: -75px;
+    color: $brand-color;
+    font-size: 64px;
+}
+h2 {
+    font-family: Oswald;
+    text-align: center;
+    color: $brand-color;
+    font-size: 70px;
+    line-height: 70px;
+    text-transform: uppercase;
+}
 
+h3 {
+    font-family: Oswald;
+    font-size: 24px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
 
 /**
  * Images
@@ -93,10 +116,6 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: $brand-color;
     text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
 
     &:hover {
         color: $text-color;
@@ -186,7 +205,15 @@ pre {
     }
 }
 
-
+.pvl {
+    padding: 10px 0; 
+}
+.phl {
+    padding: 0 24px ; 
+}
+.tac {
+    text-align: center;
+}
 
 /**
  * Icons
