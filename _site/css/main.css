@@ -34,7 +34,6 @@ ul, ol, dl, figure,
 
 h1 {
   font-family: Oswald;
-  margin-left: -75px;
   color: #FF6347;
   font-size: 64px; }
 
@@ -248,7 +247,9 @@ pre {
           margin-right: 0; } }
 
 .home {
-  background: #C2DEE0;
+  background: #C2DEE0; }
+
+.home-header {
   padding: 25px; }
 
 .About {
@@ -258,8 +259,7 @@ pre {
   background: #253A52;
   padding: 20px 10px 10px;
   margin-left: -50px;
-  max-width: 450px;
-  margin-bottom: 48px; }
+  max-width: 450px; }
 
 .list-title {
   font-size: 64px;
@@ -331,7 +331,8 @@ pre {
   margin-left: 0;
   list-style: none; }
   .post-list > li {
-    margin-bottom: 30px; }
+    padding: 2.5% 5%;
+    border-bottom: 2px solid #fff; }
 
 .post-meta {
   font-size: 13.125px;
@@ -350,8 +351,8 @@ pre {
  */
 .post {
   background: #E9EEEC;
-  padding: 32px;
-  margin: 32px; }
+  padding: 0 5% 5%;
+  margin: 0 5% 5%; }
 
 .post-header {
   margin-bottom: 30px; }
@@ -360,6 +361,7 @@ pre {
   font-size: 96px;
   max-width: 300px;
   letter-spacing: -1px;
+  margin-left: -20%;
   line-height: 1; }
   @media screen and (max-width: 800px) {
     .post-title {
@@ -367,7 +369,7 @@ pre {
 
 .post-content {
   margin-bottom: 30px;
-  padding: 0 48px; }
+  padding: 0 7.5%; }
   .post-content h2 {
     font-size: 32px; }
     @media screen and (max-width: 800px) {

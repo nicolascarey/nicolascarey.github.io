@@ -104,6 +104,8 @@
 
 .home {
     background: #C2DEE0;
+}
+.home-header {
     padding: 25px;
 }
 .About {
@@ -114,7 +116,6 @@
     padding: 20px 10px 10px;
     margin-left: -50px;
     max-width: 450px;
-    margin-bottom: 48px;
 }
 .list-title {
     font-size: 64px;
@@ -208,9 +209,9 @@
 .post-list {
     margin-left: 0;
     list-style: none;
-
     > li {
-        margin-bottom: $spacing-unit;
+        padding: 2.5% 5%;
+        border-bottom: 2px solid #fff;
     }
 }
 
@@ -236,8 +237,8 @@
 
 .post {
     background: #E9EEEC;
-    padding: 32px;
-    margin: 32px;
+    padding: 0 5% 5%;
+    margin: 0 5% 5%;
 }
 
 .post-header {
@@ -248,6 +249,7 @@
     font-size: 96px;
     max-width: 300px;
     letter-spacing: -1px;
+    margin-left: -20%;
     line-height: 1;
 
     @include media-query($on-laptop) {
@@ -257,7 +259,7 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
-    padding: 0 48px;
+    padding: 0 7.5%;
 
     h2 {
         font-size: 32px;
