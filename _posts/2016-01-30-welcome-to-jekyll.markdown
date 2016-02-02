@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  "Design Guides "
+title:  "Design Guides"
+tagline: Design guides help not only your team but also your own discipline
+slug: design-guides
 date:   2016-01-30 13:11:42 +0000
 categories: update
 number: 002

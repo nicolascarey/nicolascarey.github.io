@@ -4,16 +4,19 @@ layout: default
 
 <div class="home">
 <div class="home-header">
-  <div class="title-div">
-    <h2>Design Talks</h2>
-  </div>
+    <h2>Thoughts</h2>
+    <h1 class="tac">& things</h1>
+    <h4 class="tac">from design, travel and business</h4>
 </div>
   <ul class="post-list">
     {% for post in site.posts %}
+    <a class="post-row" href="{{ post.url | prepend: site.baseurl }}">
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <span class="post-link" >{{ post.title }}</span>
+          <span class="post-tagline">{{post.tagline}}</span>
       </li>
+      </a>
     {% endfor %}
   </ul>
 
