@@ -1,163 +1,26 @@
 ---
 layout: default
 ---
-<div id="five">
-<div class="test text-left">
-				<div>
-						<div class="firstfont">
-							<h2 class="text-center">
-								<span class="filler" id="andto">designer</span>
-							</h2>
-							<h2 class="text-right">
-								<span class="filler" id="alla">of new</span> 
-							</h2>
-							<h2 class="text-left">
-								<span class="filler" id="good">or better </span>
-							</h2> 
-							<h2 class="text-center">
-								<span class="filler" id="andto">things </span>
-							</h2>
 
-						</div>
-
-				<div class="row firstfont">
-				 <div class="" id="moon">☾</div> 
-				 <div> <em>What a wonderful thought it is that some of the best days of our lives haven't happened yet.</em></div>
-
-				</div>
-			</div>
+<div class="home">
+<div class="home-header">
+    <h2>Thoughts</h2>
+    <h1 class="tac">& things</h1>
+    <h4 class="tac">from design, travel and business</h4>
 </div>
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <a class="post-row" href="{{ post.url | prepend: site.baseurl }}">
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <span class="post-link" >{{ post.title }}</span>
+          <span class="post-tagline">{{post.tagline}}</span>
+      </li>
+      </a>
+    {% endfor %}
+  </ul>
+
 </div>
-<style>
-.text-right {
-	text-align: right;
-}
 
-.text-center {
-	text-align: center;
-}
-.text-left {
-	text-align: left;
-}
-#five .content {
-	
-	background-color: #1B1B25;
-	padding: 15rem 0 12rem 0;
-}
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-#five .day {
-	color: snow;
-	border: 2px solid #FC303A;
-}
-
-#five .firstfont  {
-			   
-	padding: 50px;
-	width: 300px;
-	margin: auto;
-	border: 5px solid #FC303A;
-} 
-
-#five .firstfont h2{
-	font-family: 'Abril Fatface', sans-serif;
-	letter-spacing: 1px;
-	text-transform: none;
-	color: #FC303A;
-	font-weight: 700;
-	background-image: linear-gradient(to bottom, transparent 0%, transparent 45%, #FC303A 45%, #FC303A 55%, transparent 55%, transparent 100%);
-}
-
-#five .firstfont h2:last-child{
-margin-bottom: 20px;
-
-}
-
-#five .filler {
-	background-color: #fff;
-}
-
-#andto {
-	padding: 0 12px;
-}
-
-#alla {
-	padding-left: 7px;
-}
-
-#good {
-	padding-left: 12px;
-	padding-right: 4px;
-}
-
-#night {
-	padding-right: 4px;
-}
-
-/*---------Paragraph Styling-------*/
-
-#five .secondfont {
-	font-family: Lora, serif;
-	letter-spacing: 4px;
-	font-size: .85em;
-	line-height: 2em;
-	width: 300px;
-	margin: 50px auto 75px auto;
-	color: gainsboro;
-} 
-
-
-#moon {
-	font-size: 2em;
-	font-style: normal;
-	float: left;
-	margin-right: 32px;
-	padding-top: 3px;
-	padding-bottom: 75px;
-}
-
-/*------Responsive styling--------*/
-@media only screen and (min-width : 480px) {
-#five .firstfont  {
-	padding: 50px;
-	width: 440px;
-}
-
-#five .firstfont h2{
-	font-size: 64px;
-	line-height: 1.2em;
-}
-
-#five .secondfont {
-	width: 440px;
-} 
-
-}
-/*------End responsive------*/
-
-#five {
-	margin-top: -20px;
-}
-#five .firstfont.row {
-	background: #FC303A;
-}
-#five .colophon {
-	font-family: Montserrat, sans-serif;
-	color: snow;
-	font-size: .75em;
-	line-height: 2.5em;
-	margin: 8rem 0 0 0;
-	padding: 0 5rem 0 5rem;
-	letter-spacing: 3px;
-}
-
-#five a {
-	color: yellow;
-}
-
-#five a:hover {
-	text-decoration: none;
-	color: slategrey;
-}
-
-
-</style>
