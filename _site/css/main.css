@@ -303,6 +303,13 @@ p {
   line-height: 36px;
   margin-bottom: 24px; }
 
+p.sans {
+  font-family: Oswald;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 36px;
+  margin-bottom: 24px; }
+
 ul.nav {
   list-style-type: none;
   margin-left: 0;
@@ -321,14 +328,12 @@ ul.nav {
     padding-right: 24px;
     padding-top: 6px;
     padding-bottom: 24px;
-    cursor: pointer; }
-    ul.nav li a {
-      color: #fff; }
-    ul.nav li.active {
+    cursor: pointer;
+    color: #fff; }
+    ul.nav li.current {
       border-bottom: 2px solid #F8E71C;
+      color: #F8E71C;
       padding-bottom: 22px; }
-      ul.nav li.active a {
-        color: #F8E71C; }
 
 ul.posts {
   list-style-type: none; }
