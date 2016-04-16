@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Tools for baseline grids"
-tagline: Tools for baseline grids
-slug: tools-for-baseline-grids
+title:  "Better structured sketch documents"
+tagline: Better structured sketch documents
+slug: better-structured-sketch-documents
 date:   2016-01-30 13:11:42 +0000
 categories: experiments
 number: 002
