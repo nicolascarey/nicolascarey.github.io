@@ -23,6 +23,7 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    background: #f5f5f5;
     &.alt {
         background-color: #D2D8DE;
     }
@@ -92,10 +93,10 @@ body {
 .elsewhere {
     display: none;
 }
-.tab-content {
+.tab-pane {
     display: none;
 }
-.tab-content.current{
+.tab-pane.active{
     display: inherit;
 }
 @include media-query($on-laptop) {
@@ -162,11 +163,38 @@ body {
     padding-right: 4em;
     }
 }
-
 }
 
-
-
+.header {
+    background-color: #122122;
+    box-sizing: border-box;
+    border-top: 0.75rem solid #f5f5f5;  
+    border-left: 0.75rem solid #f5f5f5;
+    border-right: 0.75rem solid #f5f5f5;
+}
+nav {
+    border-bottom: 1px solid #648B8E;
+}
+.title-content {
+    width: 100%;
+    background-color: #122122;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    box-sizing: border-box;
+    border-left: 0.75rem solid #f5f5f5;
+    border-right: 0.75rem solid #f5f5f5;
+}
+.post-content {
+    max-width: 720px;
+    padding-top: 36px;
+    margin: 0 auto;
+}
+.triangle {
+    max-width: 100%;
+    svg {
+        max-width: 100%;
+    }
+}
 /**
  * Images
  */
@@ -201,7 +229,7 @@ a {
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
+        text-decoration: none;
     }
 }
 
@@ -290,3 +318,23 @@ pre {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

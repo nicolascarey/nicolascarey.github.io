@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Design Guides"
-tagline: Design guides help not only your team but also your own discipline
-slug: design-guides
-date:   2016-01-30 13:11:42 +0000
-categories: update
-number: 002
+title:  "Reviewing IxDA 16"
+tagline: Reviewing IxDA 16
+slug: ixda-2016
+date:   2016-03-30 13:11:42 +0000
+categories: reviews
+number: 003
 ---
 Mumblecore bicycle rights umami knausgaard beard ennui. Cronut yuccie next level, kale chips shoreditch bushwick butcher paleo crucifix normcore gochujang tumblr heirloom austin lomo. Trust fund kitsch health goth, post-ironic biodiesel scenester PBR&B. Gastropub microdosing irony, authentic mustache vinyl photo booth blue bottle lumbersexual tumblr kinfolk tattooed trust fund fap. Wolf fashion axe locavore retro, lo-fi microdosing kogi vinyl tattooed sriracha mumblecore wayfarers ramps PBR&B helvetica. Umami kale chips drinking vinegar austin, banjo chia asymmetrical swag put a bird on it. Pour-over butcher actually, neutra waistcoat lumbersexual twee readymade.
 

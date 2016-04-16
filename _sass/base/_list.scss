@@ -17,9 +17,14 @@ ul.nav {
     	padding-top: 6px;
     	padding-bottom: 24px;
         cursor: pointer;
-    	&.current {
+        a {
+            color: #fff;
+        }
+    	&.active {
     		border-bottom: 2px solid #F8E71C;
-    		color: #F8E71C;
+            a {
+    		  color: #F8E71C;
+            }
             padding-bottom: 22px;
     	}
 	}
@@ -35,14 +40,17 @@ ul.posts {
     	padding-left: 12px;
     	padding-top: 6px;
     	padding-bottom: 6px;
-            p {font-family: Open Sans;
-        font-size: 30px;
-        line-height: 36px;
-        font-weight: 800;
-
-            }
+        span {
+            font-family: Open Sans;
+            font-size: 30px;
+            line-height: 36px;
+            font-weight: 800;
+        }
     	&:hover {
     		color: #F8E71C;
+            p {
+                color: #F8E71C;
+            }
     	}
 	}
 }
