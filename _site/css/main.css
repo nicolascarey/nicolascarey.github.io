@@ -14,7 +14,7 @@ html, body, .main {
  * Basic styling
  */
 body {
-  font: 400 18px/2 "Lora", Helvetica, Arial, sans-serif;
+  font: 400 18px/2 Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -276,7 +276,7 @@ a:hover .icon > svg path {
   max-width: 600px; }
 
 h1.logo {
-  font-family: futura-pt-condensed;
+  font-family: futura-pt-condensed, Helvetica, sans-serif;
   color: #fff;
   font-size: 44px;
   line-height: 44px;
@@ -318,9 +318,9 @@ h3 {
   text-transform: uppercase; }
 
 h4 {
-  font-family: Oswald;
-  font-size: 12px;
-  letter-spacing: 4px;
+  font-family: futura-pt-condensed;
+  font-size: 16px;
+  color: #fff;
   text-transform: uppercase; }
 
 p {
