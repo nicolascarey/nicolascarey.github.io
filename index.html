@@ -5,93 +5,24 @@ layout: index
 
 <div class="main">
     <div class="who">
-        <div class="inside">
-            <h1 class="logo">NICOLAS CAREY</h1>
+        
+    </div>
+    <div class="container about">
+
+<div class="inside">
+            <h3>NICOLAS CAREY</h3>
+            <h1 class="logo pbl"> <a class="highlight" href='thoughts'>thoughts</a> and <a class="highlight" href='work'>work</a></h1>
         </div>
         <div class="content">
-            <p class="c-tw">Product designer who connects the dots between user experience and business objectives. Passionate about solving user needs and business requirements.</p>
-        </div>
-        <div class="elsewhere">
-            <h4 class="c-tw">Elsewhere: <a href="https://github.com/nicolascarey"><span class="icon icon--github">{% include icon-github.svg %}</span></a> <a href="https://twitter.com/nsdcarey"><span class="icon icon--twitter">{% include icon-twitter.svg %}</span></a>
+            <p class="c-tw blurb">Product designer who connects the dots between user experience and business objectives. Passionate about solving user needs and business requirements.</p>
+              <div class="elsewhere">
+            <h4 class=""><span class="c-tw">Elsewhere:</span> <a href="https://github.com/nicolascarey"><span class="icon icon--github">{% include icon-github.svg %}</span></a> <a href="https://twitter.com/nsdcarey"><span class="icon icon--twitter">{% include icon-twitter.svg %}</span></a>
                 <a href="https://instagram.com/nsdcarey"><span class="icon icon--instagram">{% include icon-instagram.svg %}</span></a><a href="https://dribbble.com/nsdcarey"><span class="icon icon--dribbble">{% include icon-dribbble.svg %}</span></a><a href="https://linkedin.com/in/nicolascarey"><span class="icon icon--linkedin">{% include icon-linkedin.svg %}</span></a>
             </h4>
         </div>
-    </div>
-    <div class="container">
-
-        <div class="inside">
-            <ul class="nav tabs" role="tablist">
-                <li role="presentation" class=" tab-link "><a href="#thoughts" aria-controls="home" role="tab" data-toggle="tab">Thoughts</a></li>
-                <li role="presentation" class=" tab-link "><a href="#work" aria-controls="profile" role="tab" data-toggle="tab">Work</a></li>
-            </ul>
         </div>
+      
 
-  <!-- Tab panes -->
-<div class="tab-content">
-    <div role="tabpanel" class="content tab-pane fade in active" id="thoughts">
-        <ul class="posts">
-            {% for post in site.posts %}
-            <a class="post-row" href="{{ post.url | prepend: site.baseurl }}">
-                <li>
-                    <span class="post-link" >{{ post.title }}</span>
-                    <h4 class="post-meta">{{ post.date | date: "%b, %Y" }}</h4>
-                </li>
-            </a>
-            {% endfor %}
-        </ul>
-    </div>
-    <div role="tabpanel" class="content tab-pane fade" id="work">
-        <ul class="posts">
-            <li><p>Designing complex apps for Google</p>
-                <h4>UX Designer at Potato, Feb 2015 - Present.</h4>
-            </li>
-            <li><p>Making legal services accessible</p>
-                <h4>Product Designer at lyfeclub, Jun 2014 - Feb 2015</h4>
-            </li>
-            <li><p>Youth-led commerce platform</p>
-                <h4>Product Designer at UrbanTribe, Jul 2011 - Jun 2014</h4>
-            </li>
-            <li><p>Experimental student advertising</p>
-                <h4>Founder of Take Note, Jun 2010 - Sep 2011</h4>
-            </li>
-        </ul>
+
     </div>
 </div>
-    </div>
-</div>
-
-<script>
-$(document).ready(function(){
-    
-    $('ul.tabs li').click(function(){
-        var tab_id = $(this).attr('data-tab');
-
-        $('ul.tabs li').removeClass('current');
-        $('.tab-content').removeClass('current');
-
-        $(this).addClass('current');
-        $("#"+tab_id).addClass('current');
-    })
-
-})
-function myFunction() {
-    location.hash = "part5";
-    var x = "The anchor part is now: " + location.hash;
-    document.getElementById("demo").innerHTML = x;
-}
-
-
-$(document).ready(function() {
-    // show active tab on reload
-    if (location.hash !== '') $('a[href="' + location.hash + '"]').tab('show');
-
-    // remember the hash in the URL without jumping
-    $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
-       if(history.pushState) {
-            history.pushState(null, null, '#'+$(e.target).attr('href').substr(1));
-       } else {
-            location.hash = '#'+$(e.target).attr('href').substr(1);
-       }
-    });
-});
-</script>

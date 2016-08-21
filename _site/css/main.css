@@ -41,24 +41,26 @@ body {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-color: #245C5F;
+  background-color: #F3F8FB;
+  background: url("/assets/me.jpg") center right no-repeat;
+  background-size: cover;
   box-sizing: border-box;
-  border: 0.75rem solid #f5f5f5; }
+  border: 0.75rem solid #fff; }
 
 .container {
   -webkit-flex: 3;
   flex: 3;
-  background-color: #122122; }
+  background-color: #313131; }
   .container .inside {
     padding-top: 17px;
-    padding-left: 2em;
-    padding-right: 2em;
-    border-bottom: 1px solid #648B8E; }
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
   .container .content {
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 2em;
-    padding-right: 2em; }
+    padding-left: 16px;
+    padding-right: 16px; }
 
 .content p {
   font-family: Open Sans;
@@ -68,7 +70,10 @@ body {
 
 .who {
   -webkit-flex: 1;
-  flex: 1; }
+  flex: 1;
+  min-height: 300px;
+  background: url("/assets/me.jpg") center right no-repeat;
+  background-size: cover; }
   .who .inside {
     padding-top: 41px;
     padding-left: 2em;
@@ -78,16 +83,13 @@ body {
     padding-left: 2em;
     padding-right: 2em; }
 
-.elsewhere {
-  display: none; }
-
 .tab-pane {
   display: none; }
 
 .tab-pane.active {
   display: inherit; }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 600px) {
   .main {
     width: 100%;
     min-height: 100%;
@@ -96,30 +98,24 @@ body {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    background-color: #245C5F;
-    box-sizing: border-box;
-    border: 0.75rem solid #f5f5f5; }
+    box-sizing: border-box; }
 
   .elsewhere {
     display: block;
     padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 4em;
-    padding-right: 4em; }
+    padding-bottom: 30px; }
 
   .container {
     -webkit-flex: 3;
-    flex: 3;
-    background-color: #122122; }
+    flex: 3; }
     .container .inside {
       padding-top: 59px;
-      padding-left: 4em;
-      padding-right: 4em;
-      border-bottom: 1px solid #648B8E; }
+      padding-left: 1em;
+      padding-right: 1em; }
     .container .content {
       padding-top: 30px;
-      padding-left: 4em;
-      padding-right: 4em; }
+      padding-left: 1em;
+      padding-right: 1em; }
 
   .content p {
     font-family: Open Sans;
@@ -133,8 +129,7 @@ body {
     .who .inside {
       padding-top: 41px;
       padding-left: 4em;
-      padding-right: 4em;
-      border-bottom: 1px solid #648B8E; }
+      padding-right: 4em; }
     .who .content {
       padding-top: 30px;
       padding-left: 4em;
@@ -187,11 +182,16 @@ figcaption {
 /**
  * Links
  */
-a {
-  color: #FF6347;
+a.highlight {
+  color: #000;
+  background: #F8E71C;
+  padding: 0px 10px;
+  line-height: 0;
   text-decoration: none; }
-  a:hover {
-    color: #111;
+  a.highlight:hover {
+    box-shadow: 0px 6px 12px 6px rgba(0, 0, 0, 0.35);
+    color: #F8E71C;
+    background: #000;
     text-decoration: none; }
 
 /**
@@ -235,6 +235,9 @@ pre {
 .pvl {
   padding: 12px 0; }
 
+.pbl {
+  padding: 0 0 12px; }
+
 .phl {
   padding: 0 24px; }
 
@@ -254,14 +257,39 @@ pre {
     .icon > svg path {
       fill: #fff; }
 
+a:hover .icon > svg path {
+  fill: #F8E71C; }
+
+@media screen and (min-width: 1020px) {
+  .container {
+    -webkit-flex: 3;
+    flex: 3; }
+    .container .inside {
+      padding-top: 59px;
+      padding-left: 4em;
+      padding-right: 4em; }
+    .container .content {
+      padding-top: 30px;
+      padding-left: 4em;
+      padding-right: 4em; } }
+.about .blurb {
+  max-width: 600px; }
+
 h1.logo {
-  font-family: Oswald;
+  font-family: futura-pt-condensed;
   color: #fff;
-  font-size: 30px;
-  letter-spacing: 7px;
-  line-height: 60px;
+  font-size: 44px;
+  line-height: 44px;
   margin-bottom: 18px; }
 
+@media screen and (min-width: 600px) {
+  h1.logo {
+    font-size: 48px;
+    line-height: 80px; } }
+@media screen and (min-width: 1020px) {
+  h1.logo {
+    font-size: 64px;
+    line-height: 80px; } }
 h1.post {
   font-family: Open Sans;
   font-weight: 800;
@@ -272,7 +300,6 @@ h1.post {
 h1 {
   font-family: Oswald;
   font-size: 42px;
-  letter-spacing: 4px;
   line-height: 60px;
   margin-bottom: 18px; }
 
@@ -285,9 +312,9 @@ h2 {
   text-transform: uppercase; }
 
 h3 {
-  font-family: Oswald;
-  font-size: 24px;
-  letter-spacing: 4px;
+  font-family: futura-pt-condensed;
+  font-size: 32px;
+  color: #fff;
   text-transform: uppercase; }
 
 h4 {

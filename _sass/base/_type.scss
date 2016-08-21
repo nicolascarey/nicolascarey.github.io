@@ -1,10 +1,21 @@
 h1.logo {
-    font-family: Oswald;
+    font-family: futura-pt-condensed;
     color: #fff;
-    font-size: 30px;
-    letter-spacing: 7px;
-    line-height: 60px;
+    font-size: 44px;
+    line-height: 44px;
     margin-bottom: 18px;
+}
+@include media-query($on-palm) {
+h1.logo {
+    font-size: 48px;
+    line-height: 80px;
+}
+}
+@include media-query($on-laptop) {
+h1.logo {
+    font-size: 64px;
+    line-height: 80px;
+}
 }
 h1.post {
     font-family: Open Sans;
@@ -16,7 +27,6 @@ h1.post {
 h1 {
     font-family: Oswald;
     font-size: 42px;
-    letter-spacing: 4px;
     line-height: 60px;
     margin-bottom: 18px;
 }
@@ -29,9 +39,9 @@ h2 {
     text-transform: uppercase;
 }
 h3 {
-    font-family: Oswald;
-    font-size: 24px;
-    letter-spacing: 4px;
+    font-family: futura-pt-condensed;
+    font-size: 32px;
+    color: #fff;
     text-transform: uppercase;
 }
 h4 {
