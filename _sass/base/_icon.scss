@@ -1,0 +1,22 @@
+/**
+ * Icons
+ */
+.icon {
+    padding-right: 6px;
+    > svg {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+        path {
+            fill: #fff;
+        }
+    }
+}
+a:hover .icon {
+       > svg {
+        path {
+            fill: $accent;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+.pvl {
+    padding: 12px 0; 
+}
+.pbl {
+    padding: 0 0 12px; 
+}
+.phl {
+    padding: 0 24px ; 
+}
+.tac {
+    text-align: center;
+}

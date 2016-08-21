@@ -1,8 +1,61 @@
+/**
+ * Variables
+ */
+$blockhead: futura-pt-condensed, arial, sans-serif;
+$para: Open Sans, arial, sans-serif;
+/**
+ * Base Fonts
+ */
+h1 {
+    font-family: $blockhead;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 80px;
+    margin-bottom: 16px;
+}
+h2 {
+    font-family: $blockhead;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 64px;
+    margin-bottom: 16px;
+}
+h3 {
+    font-family: $blockhead;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 800;
+}
+h4 {
+    font-family: $blockhead;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 800;
+}
+h5 {
+    font-family: $blockhead;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+p {
+    font-family: $para;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+/**
+ * Custom Requirements
+ */
+
 h1.logo {
     font-family: futura-pt-condensed, Helvetica, sans-serif;
     color: #fff;
     font-size: 44px;
     line-height: 44px;
+    font-weight: 800;
     margin-bottom: 18px;
 }
 @include media-query($on-palm) {
@@ -17,50 +70,34 @@ h1.logo {
     line-height: 80px;
 }
 }
-h1.post {
-    font-family: Open Sans;
-    font-weight: 800;
-    font-size: 42px;
-    letter-spacing: 2px;
-    line-height: 42px;
+h1.nav-logo {
+    font-family: futura-pt-condensed, Helvetica, sans-serif;
+    color: #000;
+    font-size: 20px;
+    line-height: 16px;
+    font-weight: 900;
+    margin-bottom: 0;
 }
-h1 {
-    font-family: Oswald;
-    font-size: 42px;
-    line-height: 60px;
-    margin-bottom: 18px;
-}
-h2 {
-    font-family: Oswald;
-    text-align: center;
-    color: #fff;
-    font-size: 70px;
-    line-height: 70px;
-    text-transform: uppercase;
-}
-h3 {
-    font-family: futura-pt-condensed;
-    font-size: 32px;
-    color: #fff;
-    text-transform: uppercase;
-}
-h4 {
-    font-family: futura-pt-condensed;
-    font-size: 16px;
-    color: #fff;
-    text-transform: uppercase;
-}
-p {
-    font-family: Lora;
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    color: $grey-color;
+    border-left: 4px solid $grey-color-light;
+    padding-left: $spacing-unit / 2;
     font-size: 18px;
-    color: rgba(0,0,0,0.87);
-    line-height: 36px;
-    margin-bottom: 24px;
+    letter-spacing: -1px;
+    font-style: italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
 }
-p.sans {
-    font-family: Oswald;
-    font-size: 18px;
-    color: rgba(0,0,0,0.87);
-    line-height: 36px;
-    margin-bottom: 24px;
+/**
+ * Figure Img
+ */
+figcaption {
+    font-size: $small-font-size;
 }
