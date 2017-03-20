@@ -1,4 +1,8 @@
-.containered {
-	width: 960px;
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+}
+.measure {
+	max-width: 600px;
 	margin: 0 auto;
 }

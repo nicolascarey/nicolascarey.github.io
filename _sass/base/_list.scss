@@ -1,28 +1,25 @@
 ul {
     list-style-type: none;
 }
-ul.posts {
-	list-style-type: none;
-	li {
-    	font-family: Open Sans;
-    	font-size: 30px;
-    	line-height: 36px;
-    	margin-bottom: 24px;
-    	color: #fff;
-    	padding-left: 12px;
-    	padding-top: 6px;
-    	padding-bottom: 6px;
-        span {
-            font-family: Open Sans;
-            font-size: 30px;
-            line-height: 36px;
-            font-weight: 800;
+ul.linkedlist {
+    li {
+        font-family: Open Sans;
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 24px;
+        color: #fff;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    a li:hover {
+        cursor: pointer;
+        .post-link {
+            background: $accent;
         }
-    	&:hover {
-    		color: #F8E71C;
-            p {
-                color: #F8E71C;
-            }
-    	}
-	}
+    }
+}
+@include media-query($on-palm) {
+ul.linkedlist {
+    padding: 0 24px;
+}
 }

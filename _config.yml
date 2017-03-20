@@ -18,3 +18,7 @@ dribbble_username:  nicolascarey
 
 # Build settings
 markdown: kramdown
+collections:
+  works:
+  projects:
+    output: true

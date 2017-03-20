@@ -3,6 +3,7 @@
 //************************
 
 $accent: #FFF352;
+$secondary: #313131;
 
 
 //************************
@@ -13,7 +14,16 @@ $accent: #FFF352;
 }
 .c-tw {
 	color: #fff;
+	&:visited {
+		color: #fff;
+	}
 }
 .c-tb {
 	color: #000;
+	&:visited {
+		color: #000;
+	}
+}
+.c-tg {
+	color: rgba(0,0,0,0.56);
 }

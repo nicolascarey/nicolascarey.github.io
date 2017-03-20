@@ -8,16 +8,15 @@ $para: Open Sans, arial, sans-serif;
  */
 h1 {
     font-family: $blockhead;
-    font-size: 64px;
+    font-size: 72px;
     font-weight: 800;
-    line-height: 80px;
-    margin-bottom: 16px;
+    line-height: 64px;
 }
 h2 {
     font-family: $blockhead;
     font-size: 48px;
     font-weight: 800;
-    line-height: 64px;
+    line-height: 48px;
     margin-bottom: 16px;
 }
 h3 {
@@ -53,7 +52,7 @@ p {
 h1.logo {
     font-family: futura-pt-condensed, Helvetica, sans-serif;
     color: #fff;
-    font-size: 44px;
+    font-size: 32px;
     line-height: 44px;
     font-weight: 800;
     margin-bottom: 18px;
@@ -78,7 +77,10 @@ h1.nav-logo {
     font-weight: 900;
     margin-bottom: 0;
 }
-
+p.lead {
+    font-size: 36px;
+    line-height: 42px;
+}
 
 /**
  * Blockquotes

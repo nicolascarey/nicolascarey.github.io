@@ -7,8 +7,10 @@ dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
 }
+@include media-query($on-palm) {
 html, body, .index {
     height: 100%;
+}
 }
 /**
  * Basic styling
