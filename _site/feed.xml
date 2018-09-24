@@ -4,11 +4,11 @@
     <title>Nicolas Carey</title>
     <description>My name is Nicolas Carey. I design and develop digital experiences.
 </description>
-    <link>http://nsdcarey.com/</link>
-    <atom:link href="http://nsdcarey.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 19 Mar 2017 23:28:46 -0700</pubDate>
-    <lastBuildDate>Sun, 19 Mar 2017 23:28:46 -0700</lastBuildDate>
-    <generator>Jekyll v3.1.1</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 24 Sep 2018 18:14:29 +0100</pubDate>
+    <lastBuildDate>Mon, 24 Sep 2018 18:14:29 +0100</lastBuildDate>
+    <generator>Jekyll v3.8.4</generator>
     
   </channel>
 </rss>
